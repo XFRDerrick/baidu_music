@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UNKAllSongHeaderView" id="vuA-fC-ajD">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大家都在唱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhr-CQ-zfM">
+                    <rect key="frame" x="20" y="21" width="77" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2GH-pR-AjL">
+                    <rect key="frame" x="0.0" y="59" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="SRW-63-czT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2GH-pR-AjL" secondAttribute="trailing" id="53z-7c-JQW"/>
+                <constraint firstAttribute="bottom" secondItem="2GH-pR-AjL" secondAttribute="bottom" id="IWb-07-Prn"/>
+                <constraint firstItem="zhr-CQ-zfM" firstAttribute="centerY" secondItem="vuA-fC-ajD" secondAttribute="centerY" id="LnK-vV-TIs"/>
+                <constraint firstItem="zhr-CQ-zfM" firstAttribute="leading" secondItem="vuA-fC-ajD" secondAttribute="leading" constant="20" id="ya5-mp-HNY"/>
+                <constraint firstItem="2GH-pR-AjL" firstAttribute="leading" secondItem="vuA-fC-ajD" secondAttribute="leading" id="zfr-7w-EzI"/>
+            </constraints>
+            <point key="canvasLocation" x="-195.5" y="-13"/>
+        </collectionReusableView>
+    </objects>
+</document>

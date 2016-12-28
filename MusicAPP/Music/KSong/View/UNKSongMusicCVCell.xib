@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UNKSongMusicCVCell">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="singnow1" translatesAutoresizingMaskIntoConstraints="NO" id="7r4-JD-m3U">
+                        <rect key="frame" x="8" y="8" width="74" height="74"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="7r4-JD-m3U" secondAttribute="height" multiplier="1:1" id="c8P-U1-MY2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="柠檬草的味道-蔡依林" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wm-fY-pHH">
+                        <rect key="frame" x="97" y="27" width="145" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5568890人唱过" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajw-tg-lpM">
+                        <rect key="frame" x="97" y="47" width="83" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pa-nq-L2B">
+                        <rect key="frame" x="298" y="33" width="24" height="24"/>
+                        <state key="normal" image="bt_k_k_normail"/>
+                        <state key="highlighted" image="bt_k_k_press"/>
+                        <connections>
+                            <action selector="clickKSongButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="JYx-1K-0IZ"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rNe-2F-qFc">
+                        <rect key="frame" x="0.0" y="89" width="342" height="1"/>
+                        <color key="backgroundColor" red="0.83319737977787933" green="0.83319737977787933" blue="0.83319737977787933" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gus-s2-qrn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7r4-JD-m3U" secondAttribute="bottom" constant="8" id="9qG-rY-PKi"/>
+                <constraint firstAttribute="trailing" secondItem="rNe-2F-qFc" secondAttribute="trailing" id="Cyw-So-9B6"/>
+                <constraint firstItem="Ajw-tg-lpM" firstAttribute="top" secondItem="7r4-JD-m3U" secondAttribute="centerY" constant="2" id="Ole-WL-r2o"/>
+                <constraint firstItem="7wm-fY-pHH" firstAttribute="leading" secondItem="7r4-JD-m3U" secondAttribute="trailing" constant="15" id="S9s-8N-GYY"/>
+                <constraint firstItem="7r4-JD-m3U" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="T7L-YY-dQc"/>
+                <constraint firstItem="0Pa-nq-L2B" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="UIz-yb-jBm"/>
+                <constraint firstItem="7r4-JD-m3U" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="gS5-Yh-hll"/>
+                <constraint firstAttribute="trailing" secondItem="0Pa-nq-L2B" secondAttribute="trailing" constant="20" id="kEt-PX-JPy"/>
+                <constraint firstItem="rNe-2F-qFc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mVQ-mg-tAo"/>
+                <constraint firstItem="7wm-fY-pHH" firstAttribute="bottom" secondItem="7r4-JD-m3U" secondAttribute="centerY" id="r9A-wI-lEZ"/>
+                <constraint firstItem="7r4-JD-m3U" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="udU-M8-mam"/>
+                <constraint firstItem="Ajw-tg-lpM" firstAttribute="leading" secondItem="7wm-fY-pHH" secondAttribute="leading" id="yJP-Xp-OWN"/>
+                <constraint firstAttribute="bottom" secondItem="rNe-2F-qFc" secondAttribute="bottom" id="yYA-oT-ejg"/>
+            </constraints>
+            <size key="customSize" width="342" height="90"/>
+            <connections>
+                <outlet property="kSongCount" destination="Ajw-tg-lpM" id="4wh-Hb-DUW"/>
+                <outlet property="singerIcon" destination="7r4-JD-m3U" id="7r8-M3-ZqX"/>
+                <outlet property="songDetailLable" destination="7wm-fY-pHH" id="5ZM-KE-Vm2"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="117"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bt_k_k_normail" width="24" height="24"/>
+        <image name="bt_k_k_press" width="24" height="24"/>
+        <image name="singnow1" width="300" height="300"/>
+    </resources>
+</document>

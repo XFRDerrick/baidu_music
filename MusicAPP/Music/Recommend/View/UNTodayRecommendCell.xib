@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UNTodayRecommendCell">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="308" height="66"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gedan8" translatesAutoresizingMaskIntoConstraints="NO" id="pVT-Ig-xyk">
+                        <rect key="frame" x="5" y="5" width="56" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pVT-Ig-xyk" secondAttribute="height" multiplier="1:1" id="N5n-I0-TbY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK1-a8-niT">
+                        <rect key="frame" x="274" y="21" width="24" height="24"/>
+                        <state key="normal" image="bt_playlist_more_normal"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPE-Be-IwX">
+                        <rect key="frame" x="71" y="14" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gku-nN-Bec">
+                        <rect key="frame" x="71" y="35" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CK1-a8-niT" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="1EH-Cn-YvN"/>
+                <constraint firstItem="CK1-a8-niT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gku-nN-Bec" secondAttribute="trailing" id="5yC-Wg-cc9"/>
+                <constraint firstItem="pVT-Ig-xyk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="EMp-Yc-TVP"/>
+                <constraint firstItem="zPE-Be-IwX" firstAttribute="leading" secondItem="pVT-Ig-xyk" secondAttribute="trailing" constant="10" id="ESP-nq-MdM"/>
+                <constraint firstItem="CK1-a8-niT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zPE-Be-IwX" secondAttribute="trailing" id="JdR-CB-knb"/>
+                <constraint firstItem="zPE-Be-IwX" firstAttribute="bottom" secondItem="pVT-Ig-xyk" secondAttribute="centerY" constant="-2" id="QmO-7R-Pyx"/>
+                <constraint firstItem="pVT-Ig-xyk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="R90-1K-fUy"/>
+                <constraint firstItem="gku-nN-Bec" firstAttribute="top" secondItem="pVT-Ig-xyk" secondAttribute="centerY" constant="2" id="Wzc-HM-RFP"/>
+                <constraint firstAttribute="bottom" secondItem="pVT-Ig-xyk" secondAttribute="bottom" constant="5" id="kkA-V0-68V"/>
+                <constraint firstAttribute="trailing" secondItem="CK1-a8-niT" secondAttribute="trailing" constant="10" id="tKU-PR-dPB"/>
+                <constraint firstItem="gku-nN-Bec" firstAttribute="leading" secondItem="pVT-Ig-xyk" secondAttribute="trailing" constant="10" id="v9o-jm-gEf"/>
+            </constraints>
+            <size key="customSize" width="308" height="66"/>
+            <connections>
+                <outlet property="detailButton" destination="CK1-a8-niT" id="oJH-UO-JGe"/>
+                <outlet property="iconIV" destination="pVT-Ig-xyk" id="oeH-1U-6WY"/>
+                <outlet property="singerLable" destination="gku-nN-Bec" id="Pte-yj-Qml"/>
+                <outlet property="songNameLable" destination="zPE-Be-IwX" id="BTu-LK-x2f"/>
+            </connections>
+            <point key="canvasLocation" x="184" y="83"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bt_playlist_more_normal" width="24" height="24"/>
+        <image name="gedan8" width="606" height="607"/>
+    </resources>
+</document>
